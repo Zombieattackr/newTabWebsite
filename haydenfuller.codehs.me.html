@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #333;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #222;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: blue;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #4d4d4d;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+      }
+
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      < !-- dropside -->.dropside {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropside .dropsidebtn {
+        font-size: 1px; /*16*/
+        border: none;
+        outline: none;
+        color: blue; /*white*/
+        padding: -1px -1px; /*-12 -16*/
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .dropdown-content a:hover,
+      .dropside:hover .dropsidebtn {
+        background-color: #555;
+        color: white;
+      }
+
+      .dropside-content {
+        display: none;
+        position: absolute;
+        background-color: #666;
+        width: inherit;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropside-content a {
+
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+      }
+
+      .dropside-content a:hover {
+        background-color: #555;
+      }
+
+      .dropside:hover .dropside-content {
+        display: inline;
+      }
+
+    </style>
+    
+    <title>Home</title>
+    
+  </head>
+  <body>
+    <div class="navbar">
+
+      <!-- google -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://google.com">Google</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- gogl drives -->
+          <a href="https://drive.google.com/drive/u/0/my-drive">Drive</a>
+
+          <!-- gogl documents -->
+          <a href="https://docs.google.com/document/u/0/?tgif=c">Docs</a>
+
+          <!-- gogl spreadsheets -->
+          <a href="https://docs.google.com/spreadsheets/u/0/?tgif=d">Sheets</a>
+
+          <!-- gogl slideshows -->
+          <a href="https://docs.google.com/presentation/u/0/?tgif=d">Slides</a>
+
+          <!-- gogl classroom -->
+          <a href="https://classroom.google.com/u/0/h">Classroom</a>
+
+          <!-- gogl youtube -->
+          <a href="https://www.youtube.com/">YouTube</a>
+
+          <!-- gogl maps -->
+          <a href="https://maps.google.com/">Maps</a>
+
+          <!-- gogl earth -->
+          <a href="https://earth.google.com/">Earth</a>
+
+        </div>
+      </div>
+
+      <!-- rensselaer -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://lms.rpi.edu/ultra/course">Classes</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- rpi Algorithms -->
+          <div class="dropside">
+            <button class="dropsidebtn"><a href="https://lms.rpi.edu/ultra/courses/_14639_1/cl/outline">Algo</a>
+              <i class="btn btn-secondary"></i>
+            </button>
+            <div class="dropside-content">
+
+              <!-- rpi algo submitty -->
+              <a href="https://submitty.cs.rpi.edu/courses/s23/csci2300">Submitty</a>
+              
+              <!-- rpi algo piaza -->
+              <a href="https://piazza.com/class/lchzo4eptek3bk">Piazza</a>
+
+            </div>
+          </div>
+
+          <!-- rpi EconomicsGrowthInnovation -->
+          <div class="dropside">
+            <button class="dropsidebtn"><a href="https://lms.rpi.edu/ultra/courses/_15359_1/cl/outline">Econ</a>
+              <i class="btn btn-secondary"></i>
+            </button>
+            <div class="dropside-content">
+
+              <!-- rpi emco na -->
+              <a href="https://www.google.com">N/A</a>
+
+            </div>
+          </div>
+
+          <!-- rpi ElectricCircuits -->
+          <div class="dropside">
+            <button class="dropsidebtn"><a href="https://lms.rpi.edu/ultra/courses/_15097_1/cl/outline">Circ</a>
+              <i class="btn btn-secondary"></i>
+            </button>
+            <div class="dropside-content">
+
+              <!-- rpi circ gradescope -->
+              <a href="https://www.gradescope.com/courses/483406">Gradescope</a>
+              
+              <!-- rpi circ website -->
+              <a href="https://sites.ecse.rpi.edu/~ssawyer/videos/">ECSE</a>
+
+            </div>
+          </div>
+
+          <!-- rpi PhysicsII -->
+          <div class="dropside">
+            <button class="dropsidebtn"><a href="https://lms.rpi.edu/ultra/courses/_15413_1/cl/outline">Phys</a>
+              <i class="btn btn-secondary"></i>
+            </button>
+            <div class="dropside-content">
+
+              <!-- rpi phys Pearson -->
+              <a href="https://mlm.pearson.com/">Pearson</a>
+
+              <!-- rpi phys Gradescope -->
+              <a href="https://www.gradescope.com/courses/484900">Gradescope</a>
+
+
+            </div>
+          </div>
+
+          <!-- rpi studentInfoService -->
+          <a href="https://sis.rpi.edu">SIS</a>
+
+          <!-- rpi webmail -->
+          <a href="https://webmail.rpi.edu/roundcube">Webmail</a>
+
+        </div>
+      </div>
+
+      <!-- Reddit -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://www.reddit.com">Reddit</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- red img -->
+          <a href="https://imgur.com/upload">imgur</a>
+
+          <!-- red aww -->
+          <a href="https://www.reddit.com/r/aww">aww</a>
+
+          <!-- red rensselaer -->
+          <a href="https://www.reddit.com/r/RPI/">RPI</a>
+
+          <!-- red me -->
+          <a href="https://www.reddit.com/user/Zombieattackr">My Profile</a>
+
+          <!-- red inbox -->
+          <a href="https://www.reddit.com/message/inbox">inbox</a>
+
+          <!-- red messages -->
+          <a href="https://www.reddit.com/message/messages">messages</a>
+
+          <!-- red hardwareswap -->
+          <a href="https://www.reddit.com/r/hardwareswap">HWS</a>
+
+          <!-- red mechanicalKeyboards -->
+          <a href="https://www.reddit.com/r/mechanicalkeyboards">MechKeeb</a>
+
+          <!-- red mechMarket -->
+          <a href="https://www.reddit.com/r/mechmarket">MechMarket</a>
+
+        </div>
+      </div>
+
+      <!-- Steam -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://www.steamcommunity.com/id/Zombieattackr">Steam</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- stm CommunityMarket -->
+          <div class="dropside">
+            <button class="dropsidebtn"><a href="https://www.steamcommunity.com/market">Market</a>
+              <i class="btn btn-secondary"></i>
+            </button>
+            <div class="dropside-content">
+
+              <!-- stm cm counterStrikeGlobalOffensive -->
+              <a href="https://www.steamcommunity.com/market/search?appid=730">CSGO</a>
+
+            </div>
+          </div>
+
+          <!-- stm Inventory -->
+          <div class="dropside">
+            <button class="dropsidebtn"><a href="https://www.steamcommunity.com/id/Zombieattackr/inventory">Inventory</a>
+              <i class="btn btn-secondary"></i>
+            </button>
+            <div class="dropside-content">
+
+              <!-- stm inv counterstrikeglobaloffensive -->
+              <a href="https://www.steamcommunity.com/id/Zombieattackr/inventory/#730">CSGO</a>
+
+              <!-- stm inv tradeoffers -->
+              <a href="https://www.steamcommunity.com/id/Zombieattackr/tradeoffers">Trade Offers</a>
+
+              <!-- stm inv history -->
+              <a href="https://www.steamcommunity.com/id/Zombieattackr/inventoryhistory/?app%5B%5D=730">History</a>
+              
+              <!-- stm inv spreadsheet -->
+              <a href="https://docs.google.com/spreadsheets/d/1KcTsyMeqeGbZt3dQ-aYcugiWexIqWmvIrBr3p9Q1rCM/edit">Sheet</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- shopping -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://www.amazon.com">Amazon</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- shop newegg -->
+          <a href="https://www.newegg.com/Components/Store/ID-1">Newegg</a>
+
+          <!-- shop massdrop -->
+          <a href="https://www.drop.com">Drop</a>
+
+        </div>
+      </div>
+
+      <!-- socialmedia -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://www.youtube.com">YouTube</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- media twitch -->
+          <a href="https://www.twitch.tv">Twitch</a>
+
+          <!-- media discord -->
+          <a href="https://discordapp.com/channels/@me">Discord</a>
+
+          <!-- media espnplus -->
+          <a href="https://www.espn.com/nhl/team/_/name/stl/st-louis-blues">ESPN+</a>
+
+        </div>
+      </div>
+
+      <!-- webTools -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://app.corelvector.com">Tools</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- tool Desmos -->
+          <a href="https://www.desmos.com/calculator">Desmos</a>
+
+          <!-- tool ChatGPT -->
+          <a href="https://chat.openai.com/chat">ChatGPT</a>
+
+          <!-- tool Grammarly -->
+          <a href="https://app.grammarly.com">Grammarly</a>
+
+          <!-- tool smallPDF -->
+          <a href="https://smallpdf.com/edit-pdf">smallPDF</a>
+
+          <!-- tool iLovePDF -->
+          <a href="https://www.ilovepdf.com/">iLovePDF</a>
+
+          <!-- tool circuitlab -->
+          <a href="https://www.circuitlab.com/editor/#?id=7pq5wm&from=homepage">CircuitLab</a>
+
+          <!-- tool PeriodicTable -->
+          <a href="https://ptable.com/?lang=en#Electrons">PTable</a>
+
+          <!-- tool DiffChecker -->
+          <a href="https://www.diffchecker.com/diff">DiffCheck</a>
+        </div>
+      </div>
+
+      <!-- RPImail -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://webmail.rpi.edu/roundcube">Webmail</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- mail ehc -->
+          <a href="https://union.sympa.rpi.edu/wws">EHC mail</a>
+
+        </div>
+      </div>
+
+      <!-- single links -->
+      <a href="https://cslesports.mainline.gg/nacestarleague/open/open-csgo/csgo-east/-/tournament/matches">CSGO</a>
+      <a href="https://www.faceit.com/en/teams/895b6ae7-b7e8-47eb-b472-89c8951edb34">Faceit</a>
+
+      <!-- Life -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://us.etrade.com/">Life</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- li github -->
+          <a href="https://github.com/">GitHub</a>
+
+          <!-- li linkedin -->
+          <a href="https://www.linkedin.com/in/hayden-fuller-b79a0a203/">Linkedin</a>
+          
+          <!-- li handshake -->
+          <a href="https://app.joinhandshake.com/stu/users/33580722">Handshake</a>
+
+        </div>
+      </div>
+
+      <!-- Keyboard -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://kbdfans.com">Keyboard</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- kbd keysets -->
+          <a href="https://matrixzj.github.io/docs/gmk-keycaps/Laser-R2/">Keysets</a>
+
+          <!-- kbd Laser -->
+          <a href="https://drop.com/buy/drop-mito-gmk-laser-custom-keycap-set">GMK Laser</a>
+
+        </div>
+      </div>
+
+      <!-- Edit -->
+      <div class="dropdown">
+        <button class="dropbtn"><a href="https://codehs.com/editor/abacus/2268556/1198503/0/0?">Edit</a>
+          <i class="btn btn-secondary"></i>
+        </button>
+        <div class="dropdown-content">
+
+          <!-- edt login -->
+          <a href="https://www.codehs.com">login</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/New-York/time" style="text-decoration: none" class="clock24" id="tz24-1662877242-c1179-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2MzFkN2UzYTEzY2JhIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Clock :: New York" target="_blank" rel="nofollow">EST</a></p><div id="clock_block_cb631d7e3a13cba"></div></div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+
+
+    <a href="https://play.typeracer.com/" target="_top"><img src="https://data.typeracer.com/misc/badge?user=zombieattackr" border="0" alt="TypeRacer.com scorecard for user zombieattackr"/></a>
+
+
+    <img src="https://cdn.discordapp.com/attachments/600528589070401537/1064610885743689848/TransitorReference.jpg" alt="Normal Pinvert" style="width:140px;height:50px;">
+
+
+    <!-- google search -->
+    <form method="get" action="http://www.google.com/search">
+      <div style="border:2px solid black;padding:4px;width:15em;">
+        <table border="0" align="center" cellpadding="0">
+        <tr><td>
+          <input type="text" name="q" size="25" style="color:#222;"
+            maxlength="255" value="Google"
+            onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+          <input type="submit" value="Google!" />
+        </table>
+      </div>
+    </form>
+
+    <!-- ecosia search -->
+    <form method="get" action="http://www.ecosia.org/search">
+      <div style="border:2px solid black;padding:4px;width:15em;">
+        <table border="0" align="center" cellpadding="0">
+        <tr><td>
+          <input type="text" name="q" size="25" style="color:#222;"
+            maxlength="255" value="Ecosia"
+            onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+          <input type="submit" value="Ecosia!" />
+        </table>
+      </div>
+    </form>
+
+    <!-- duckDuckGo search -->
+    <form method="get" action="https://duckduckgo.com/?q=%s">
+      <div style="border:2px solid black;padding:4px;width:15em;">
+        <table border="0" align="center" cellpadding="0">
+        <tr><td>
+          <input type="text" name="q" size="25" style="color:#222;"
+            maxlength="255" value="DuckDuckGo"
+            onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+          <input type="submit" value="DuckDuckGo!" />
+        </table>
+      </div>
+    </form>
+
+  </body>
+</html>
